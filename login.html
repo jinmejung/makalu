@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="layout/basic/css/common.css">
+    <link rel="stylesheet" href="layout/basic/css/layout.css">
+    
+    <link rel="stylesheet" href="css/module/member/login.css">
+    <link rel="stylesheet" href="css/module/myshop/orderHistoryNologin.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>
+            #contents{ margin:0 auto !important;}
+            #container{min-height:500px!important;}
+            footer{position: absolute;
+            bottom: 0;
+            width: 100%;}
+    </style>
+</head>
+<body id="main">
+   <script src="makalu/header/downmenu.js"></script>
+           <header id="headerWrap_b">
+                <div class="header_outer">
+                    <div class="header_inner clearfix">
+                        <div class="navWrap">
+                            <h1 class="logo"><a href="index.html"><img src="makalu/img/main_logo_b.png" alt="MAKALU"></a></h1>
+                            <ul class="gnb">
+                                <li class="down_menu"><a href="about.html">ABOUT</a></li>
+                                <li class="down_menu store"><a href="store.html">STORE</a></li>
+                                <li class="down_menu community"><a href="#">COMMUNITY</a>
+                                    <ul>
+                                        <li><a class="down" href="#">NOTICE</a></li>
+                                        <li><a class="down" href="faq.html">FAQ</a></li>
+                                        <li><a class="down" href="#">REVIEW</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="login_zone">
+                                <div id="headerR" class="ease">
+                                    <script src="makalu/header/menuCont.js"></script>
+                                    <div class="topIconWrap">
+                                        <ul class="topIcons">
+                                            <li class="ease">
+                                                <div class="ease"><a href="#"><img src="makalu/img/topRbtn01_b.png" alt="회 원" title="회 원"></a></div>
+                                            </li>              
+                                            <li>
+                                                <div class="ease"><a href="#"><img src="makalu/img/topRbtn02_b.png" alt="검 색" title="검색" /></a></div>
+                                            </li>
+                                            <li module="Layout_orderBasketcount" class="basket">
+                                                <div class="ease">
+                                                    <a href="#">
+                                                        <img src="makalu/img/topRbtn03_b.png" alt="장바구니" title="장바구니" />
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="ease"><a href="#"><img src="makalu/img/topRbtn04_b.png" alt="오늘 본 상품" title="오늘 본 상품" /></a></div>
+                                            </li>
+                                            <!--li>
+                                                <div class="ease">
+                                                    <a href="/board/index.html"><img src="makalu/img/topRbtn05_b.png" alt="커뮤니티" title="커뮤니티" /></a>
+                                                </div>
+                                            </li-->
+                                        </ul>
+                                        <div class="topContWrap">
+                                            <ul class="topCont">
+                                                <li style="display:none;">
+                                                    <div id="topLog" class="ease">
+
+                                                        <ul module="Layout_statelogoff" class="logout">
+                                                            <li><a href="login.html" class="log">LOGIN</a></li>
+                                                            <li class="join">
+                                                                <script src="makalu/header/balloonMoving.js"></script>
+                                                                <a href="#">JOIN</a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="normalLog">
+                                                            <li><a href="#">ORDER</a></li>
+                                                            <li><a href="#">MY PAGE</a></li>
+                                                            <li><a href="#" target="_blank" onclick="winPop(this.href); return false;">+ BOOK MARK</a></li>
+                                                        </ul>
+
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div id="searchWrap">
+                                                       <link rel="stylesheet" href="css/module/layout/searchHeader.css">
+                                                        <form id="serchBarForm" name action="#" method="get" enctype="multipart/form-data">
+                                                            <input id="banner_action" name="banner_action" value type="hidden">
+                                                            <div class="xans-element- xans-layout xans-layout-searchheader">
+                                                                <fieldset>
+                                                                    <legend>검색</legend>
+                                                                    <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text"><input type="image" src="makalu/img/comm_topSearchR.png" alt="검색" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;">
+                                                                    &nbsp;
+                                                                </fieldset>
+                                                            </div>
+                                                        </form>
+
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>                 
+                            </div><!--logozone-->
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- // header -->
+            <div id="wrap"><!-- contentswrap -->
+                <div id="container">
+                    <div id="contents">
+                        <div class="login-wrap">
+                            <div module="member_login" class="login-box-wrap">
+                               
+                                <div class="login-contents">
+                                    <h3>LOGIN</h3>
+
+                                    
+                                    <ul>
+                                        <li><input id="member_id" name="member_id" fw-filter="isFill" fw-label="아이디" fw-msg="" class="inputTypeText" placeholder="ID" value="" type="text"></li>
+                                        <li><input id="member_passwd" name="member_passwd" fw-filter="isFill&amp;isMin[4]&amp;isMax[16]" fw-label="패스워드" fw-msg="" value="" type="password" placeholder="PASSWORD"></li>
+                                    </ul>
+                                    <div class="btn-box">
+                                        <a href="#" onclick="{$action_func_login}" class="loginbutton">LOGIN</a>
+                                        <a href="#" class="loginbutton join">JOIN</a>
+                                    </div>
+
+                                    <div class="find-box">
+                                        <a href="#">FORGOT ID</a> / 
+                                        <a href="#">FORGOT PASSWORD</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <form id="historyNoLoginForm" name="" action="/exec/front/MyShop/OrderHistoryLogin/" method="POST" enctype="multipart/form-data">
+                                <input id="order_detail_url" name="order_detail_url" value="/myshop/order/detail.html" type="hidden">
+                                <div class="login-box-wrap xans-element- xans-myshop xans-myshop-orderhistorynologin">
+                                   
+                                    <div class="login-contents">
+                                        <h3>GUEST ORDER</h3>
+                                        <p>주문시의 주문번호로 주문조회가 가능합니다.</p>
+                                        <ul class="guest-order-input">
+                                            <li><input id="order_name" name="order_name" fw-filter="isFill" fw-label="주문자명" fw-msg="" class="inputTypeText" placeholder="NAME" value="" type="text"></li>
+                                            <li class="number">
+                                                <input id="order_id1" name="order_id1" maxlength="8" fw-filter="isOrderid&amp;isFill" fw-label="주문번호" fw-msg="" value="" type="text" placeholder="ORDER NUMBER" style="width: 139px;">
+                                                -<input id="order_id2" name="order_id2" maxlength="10" fw-filter="isOrderid&amp;isFill" fw-label="주문번호" fw-msg="" value="" type="text" style="width: 138px;">
+                                            </li>
+                                            <li>
+                                                <input id="order_password" name="order_password" fw-filter="isFill" fw-label="비회원주문 비밀번호" fw-msg="" value="" type="password" placeholder="ORDER PASSWORD">
+                                            </li>
+                                        </ul>                
+                                        <div class="btn-box">
+                                            <a href="#" class="a-none"><input type="submit" value="CHECK" alt="Check"  class="non-member-button" style="cursor:pointer;"></a>
+                                            <p class="link {$display_nomember|display}" id="noMemberWrap">
+                                                <a href="#" onclick="{$action_nomember_order}" >비회원 구매</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- // contentswrap -->
+            <footer>
+                    <div class="footer-inner">
+                        <ul class="information information_b">
+                            <li><a href="about.html">회사소개</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a>
+                            </li>
+                            <li>법인명 : (주)트랜드메카</li>
+                            <li>대표자 : 서대규 </li>
+                            <li>통신판매업 신고 : 2016-서울강남02846호</li>
+                            <li>(06107) 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층</li>
+                            <li>사업자 등록번호 안내 : 113-86-48435 <a href="#none" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=113-86-48435', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a></li>
+                        </ul>
+                        <ul class="copyright copyright_b">
+                            <li> 2018 trendmecca</li>
+                        </ul>
+                    </div>
+            </footer><!-- // footer -->
+    
+</body>
+<script>
+    $(document).ready(function(){
+            $('.visual-text-right li a').on('mouseover focusin', function() {
+            	if ( !$(this).hasClass('active') ) {
+	            	var $this = $(this);
+		            $('.visual-text-right li a').removeClass('active');
+	            	$(this).addClass('active');
+	            	var nav = $(this).data('child');
+	            	$('.visual-cont li').stop().fadeOut();            	
+	            	$('.visual-cont li.' + nav).stop().fadeIn();
+            	}
+            })
+        });		
+</script>
+</html>

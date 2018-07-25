@@ -1,0 +1,153 @@
+#wrap{width:100% !important; margin: 0 auto !important;}
+#headerWrap_b{position:absolute !important;}
+#headerWrap_b .navWrap .gnb li a{color:#fff !important;} 
+footer{ margin-top: -40px}
+
+.clearfix{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        #fullpage{
+            height:100%;
+            width:100%;
+            position: relative;
+        }
+        .vertical-scrolling{
+            height:100vh;
+            overflow: hidden;            
+        }
+        /*  section1  */
+        .vertical-scrolling .first-scroll{
+            height:100%;
+        }
+        #banner_half_wrap{
+            position:relative;
+            width:100%;
+            height:100%;
+        }
+        #banner_half_wrap .banner_half_box{
+            float:left;
+            position:absolute;
+            width:50%;
+            height:100%;
+        }
+         #banner_half_wrap .banner_half_box:after{
+            content: "";
+            clear: both;
+            display: block;
+           }
+
+        .banner_half_box.blue{
+            background-color:#09113e;
+        }
+        #banner_half_wrap .txt{
+            width:70%;
+            position:absolute;
+            left:150px;
+            bottom:150px;
+            text-align: left;
+            color:#fff;
+        }
+        #banner_half_wrap .txt p.ti{
+            font-size:30px;
+            margin-bottom:20px;
+            font-weight:700;
+            font-family: 'Book', sans-serif;
+            letter-spacing:0px;
+        }
+        #banner_half_wrap .txt p.ti > span{
+            font-family: 'Noto Sans KR','nanumgothic',sans-serif;
+            font-weight: 500;
+            font-size: 32px;
+        }
+        #banner_half_wrap .txt p{
+            font-weight: 300;
+            font-size: 16px;
+            font-family: 'Noto Sans KR','nanumgothic', sans-serif;
+            line-height: 160%;
+        }
+        .banner_half_video{
+            float:right;
+            height:100%;
+            width: 50%;
+            z-index: -1;
+            position: relative;
+        }
+        .banner_half_video video{
+            height:100%;
+            position: absolute;
+            left:50%;
+            transform:translateX(-50%);
+        }
+        /* section2 */ 
+        .secon-scroll{
+            height:100%;
+        }
+        .product_wrap{
+            margin:0px 20px 0;
+            height:100%;
+            position:relative;
+        }
+        .product_wrap .prd_list{
+            width:100%;
+            height: 80%;
+            font-size:0;
+            line-height:0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            
+                min-width: 1300px;
+        }
+        .product_wrap .prd_list li{
+            position:relative;
+            float:left;
+            width:20%;
+                height: 100%;
+        }
+        .product_wrap .prd_list li .prd_img_box{
+            text-align: center;
+            position: relative;
+             margin: 0 0px 0px;
+            z-index: 1;
+                height: 100%;
+        }
+		.product_wrap .prd_list li .prd_img_box a:hover{
+			filter: alpha(opacity=9);
+    		opacity: .9;
+		}
+		.product_wrap .prd_list li .prd_img_box img{
+			height:100%;
+		}
+        .product_wrap .prd_list li .prd_txt_box{
+            margin:0 auto;
+            padding: 0 0 30px 30px;
+            z-index: 9999;
+            font-size:12px;
+            line-height:12px;
+            text-align: left;
+            position: absolute;
+            bottom:0;
+        }
+        .product_wrap .prd_list li .prd_txt_box .prd_name{
+            display: block;
+            text-align: left;
+            margin: 0 0 10px;
+            color: #333;
+            font-family: 'Book',sans-serif;
+            font-weight: 100;
+            font-size: 14px;
+        }
+	.product_wrap .prd_list li .prd_txt_box .prd_consumer_price{
+			font-size: 12px;
+            color: #999999;
+            text-decoration: line-through;
+         	display:block;
+        	line-height:180%;
+		}
+	.product_wrap .prd_list li .prd_txt_box .prd_price{
+			font-size:12px;
+        	color:#09113e;
+        	font-weight:600;
+		}

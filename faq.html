@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ</title>
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="layout/basic/css/common.css">
+    <link rel="stylesheet" href="layout/basic/css/layout.css">
+    <link rel="stylesheet" href="css/faq.css">
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>
+        #wrap .wyGrid.wyPageAlignCenter{width:100%; margin:0;}
+        body.center #contents {width:100%;}
+    </style>
+</head>
+<body id="main">
+   <script src="makalu/header/downmenu.js"></script>
+           <header id="headerWrap_b">
+                <div class="header_outer">
+                    <div class="header_inner clearfix">
+                        <div class="navWrap">
+                            <h1 class="logo"><a href="index.html"><img src="makalu/img/main_logo_b.png" alt="MAKALU"></a></h1>
+                            <ul class="gnb">
+                                <li class="down_menu"><a href="about.html">ABOUT</a></li>
+                                <li class="down_menu store"><a href="store.html">STORE</a></li>
+                                <li class="down_menu community"><a href="#">COMMUNITY</a>
+                                    <ul>
+                                        <li><a class="down" href="#">NOTICE</a></li>
+                                        <li><a class="down" href="faq.html">FAQ</a></li>
+                                        <li><a class="down" href="#">REVIEW</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="login_zone">
+                                <div id="headerR" class="ease">
+                                    <script src="makalu/header/menuCont.js"></script>
+                                    <div class="topIconWrap">
+                                        <ul class="topIcons">
+                                            <li class="ease">
+                                                <div class="ease"><a href="#"><img src="makalu/img/topRbtn01_b.png" alt="회 원" title="회 원"></a></div>
+                                            </li>              
+                                            <li>
+                                                <div class="ease"><a href="#"><img src="makalu/img/topRbtn02_b.png" alt="검 색" title="검색" /></a></div>
+                                            </li>
+                                            <li module="Layout_orderBasketcount" class="basket">
+                                                <div class="ease">
+                                                    <a href="#">
+                                                        <img src="makalu/img/topRbtn03_b.png" alt="장바구니" title="장바구니" />
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="ease"><a href="#"><img src="makalu/img/topRbtn04_b.png" alt="오늘 본 상품" title="오늘 본 상품" /></a></div>
+                                            </li>
+                                            <!--li>
+                                                <div class="ease">
+                                                    <a href="/board/index.html"><img src="makalu/img/topRbtn05_b.png" alt="커뮤니티" title="커뮤니티" /></a>
+                                                </div>
+                                            </li-->
+                                        </ul>
+                                        <div class="topContWrap">
+                                            <ul class="topCont">
+                                                <li style="display:none;">
+                                                    <div id="topLog" class="ease">
+
+                                                        <ul module="Layout_statelogoff" class="logout">
+                                                            <li><a href="login.html" class="log">LOGIN</a></li>
+                                                            <li class="join">
+                                                                <script src="makalu/header/balloonMoving.js"></script>
+                                                                <a href="#">JOIN</a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="normalLog">
+                                                            <li><a href="#">ORDER</a></li>
+                                                            <li><a href="#">MY PAGE</a></li>
+                                                            <li><a href="#" target="_blank" onclick="winPop(this.href); return false;">+ BOOK MARK</a></li>
+                                                        </ul>
+
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div id="searchWrap">
+                                                       <link rel="stylesheet" href="css/module/layout/searchHeader.css">
+                                                        <form id="serchBarForm" name action="#" method="get" enctype="multipart/form-data">
+                                                            <input id="banner_action" name="banner_action" value type="hidden">
+                                                            <div class="xans-element- xans-layout xans-layout-searchheader">
+                                                                <fieldset>
+                                                                    <legend>검색</legend>
+                                                                    <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text"><input type="image" src="makalu/img/comm_topSearchR.png" alt="검색" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;">
+                                                                    &nbsp;
+                                                                </fieldset>
+                                                            </div>
+                                                        </form>
+
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>                 
+                            </div><!--logozone-->
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- // header -->
+            <div id="wrap"><!-- contentswrap -->
+                <div id="container">
+                    <div id="contents">
+                        <div class="tab_area">
+                            <ul class="tab">
+                                <li><a href="#panel1">회원가입</a></li>
+                                <li><a href="#panel2">결제문의</a></li>
+                                <li><a href="#panel3">교환 및 환불</a></li>
+                                <li><a href="#panel4">A/S</a></li>
+                            </ul>
+                            <div class="panel" id="panel1">
+                                <dl>
+                                    <dt>회원정보 수정은 어디서 하나요?</dt>
+                                    <dd>
+                                        로그인후 my page의 회원 정보 수정을 하시 개인 정보 수정이 가능합니다. <br>
+                                        회원님의 e-mail과 주소 등이 변경 되었다면, 주문 전 필히 확인 하시고 정보 수정을 하시기 바랍니다.
+                                    </dd>
+
+                                    <dt>아이디 / 비밀번호 찾기는 어디에 있나요? </dt>
+                                    <dd>
+                                        로그인 페이지 하단에 ‘아이디/비밀번호 찾기’ 버튼을 클릭하시면 됩니다.<br>
+                                        <span>※ 핸드폰 인증을 통해 아이디와 비밀번호를 찾을 수 있습니다.</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="panel" id="panel2">
+                                <dl>
+                                    <dt>입금확인은 언제쯤 되나요?</dt>
+                                    <dd>
+                                        입금 확인은 당일 오후 2시 일괄 확인되며, 오후 2시 이후 입금자는 익일 오후 2시에 입금확인 처리가 진행 됩니다.<br>
+                                        <span>※ 주말 및 공휴일은 휴무이므로 양해 부탁드립니다.</span>
+                                    </dd>
+
+                                    <dt>주문취소는 어떻게 하나요?</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>1. 상품 준비중 - 상품 준비중 상태의 제품은 취소가 가능하시며, 고객센터로 문의주시거나 오후 2시 이전에 요청하시면 주문 취소가 가능합니다.</li>
+                                            <li>2. 배송 준비중 - 배송 준비중 상태의 제품은 취소가 제한되며, 취소요청의 경우 출고 진행 유무에 따라 처리를 도와드리고 있습니다. 
+                                                <span>※ 출고가 이미 진행된 경우 주문 취소가 불가합니다.</span></li>
+                                        </ul>       	
+                                    </dd>
+
+                                    <dt>배송기간 및 지연시</dt>
+                                    <dd>
+                                        배송의 경우 입금확인한 당일날 출고가 됩니다. 기간은 택배사의 사정에 따라 2~3일 정도 소요될 수 있으며, 상품에 따라 배송이 지연될수있는데, 그런 경우 고객님께 따로 안내를 드립니다.
+                                        <span>※ 주말 / 공휴일 제외</span>
+                                    </dd>
+
+                                    <dt>상품 재입고는 언제쯤 되나요?</dt>
+                                    <dd>
+                                        품절 상품의 경우 입고 일정 미정이며, 정확한 안내가 어렵습니다. 빠른 시일 내에 상품을 준비하도록 노력하겠습니다.
+                                    </dd>
+
+                                    <dt>환불처리 기간은 얼마나 걸리나요?</dt>
+                                    <dd>
+                                        환불 건은 오후 6시에 일괄 처리되며, 핸드폰 결제 취소의 경우 당월(월이 바뀔 경우, 수수료 3% 청구), 카드사 결제 취소의 경우 영업일기준 3~5일 정도 소요 됩니다. <br>무통장 입금의 경우 해당 고객님의 계좌번호가 필요하기 때문에, 1599-8246으로 문의 주시면 감사하겠습니다.
+                                    </dd>
+
+                                    <dt>방문 문의</dt>
+                                    <dd>
+                                        현재 마칼루는 쇼핑몰을 통한 온라인 판매만 진행중이며, 오프라인 매장은 운영하고 있지 않기 때문에 방문구매 및 방문수령이 제한되는 점 양해바랍니다.
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="panel" id="panel3">
+                                <dl>
+                                    <dt>환불은 어떻게 하나요?</dt>
+                                    <dd>
+                                        단순 변심의 경우 물건 수령 후 일주일 이내에 착용 흔적이 없을 시에만 가능합니다. (왕복 배송비 고객부담)<br>
+                                        초기 불량의 경우 상품 수령 후 사용 전 명백한 상품의 하자가 발견된 경우 가능합니다.<br>
+                                        <span>※ 단순변심 및 초기 불량인 경우 상품에 착용 흔적 또는 상품가치가 하락되어 재판매가 어려운 경우 반품이 제한됩니다.</span>
+                                    </dd>
+
+                                    <dt>환불이 불가능한 경우는?</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>1. 제품 수령 후 7일을 초과한 경우</li>
+                                            <li>2. 포장이 훼손되어 상품의 가치가 상실된 경우</li>
+                                            <li>3. 초기 하자를 확인하였음에도 불구하고 상품을 훼손 또는 사용하여 상품 가치를 하락 시킨 경우</li>
+                                            <li>4. 상품의 택을 제거한 경우 </li>
+                                            <li>5. 상품을 착용 및 사용 하셨던 흔적이 있을 경우</li>
+                                            <li>6. 시계의 경우 밴드 조절을 하신경우</li>
+                                            <li>7. 정확한 업무처리를 위해 맞교환(오배송, 불량 포함)은 불가능합니다.</li>
+                                        </ul>       	
+                                    </dd>
+
+                                    <dt>교환 및 환불방법</dt>
+                                    <dd>
+                                        단순 변심 등의 사유로 교환/반품 시에는 왕복 택배비가 부담됩니다.<br> 타 택배를 이용하실 경우, 추가 비용은 구매자가 부담할 수 있으므로 지정 택배사를 이용해 주시기 바랍니다. <br>
+                                        대한통운 외 타 택배사 이용 시 사이트 하단의 논현동 주소로 선불 요금 지불하신 후, 박스 안쪽에 3천원과 간단한 메모를 동봉하여 보내주시면 됩니다. <br>자세한 안내는 고객번호(1599-8246)으로 문의 바랍니다. 
+                                        <span>※ 선불 발송시 3천원 동봉 / 착불 발송시 6천원 동봉 후, 택배 발송 부탁드립니다.</span>
+                                    </dd>
+
+                                    <dt>수선문의</dt>
+                                    <dd>
+                                        수선은 따로 진행하고있지 않습니다. 가까운 시계방에 가시면 조정 가능하십니다.
+                                        자세한 안내는 고객번호(1599-8246)으로 문의 바랍니다.
+                                    </dd>
+
+                                    <dt>제품하자가 있을 경우 어떻게 하나요?</dt>
+                                    <dd>
+                                        하자 제품의 교환은 착불로 보내주시면 동일 제품으로 교환해 드립니다.
+                                        자세한 안내는 고객번호(1599-8246)으로 문의 바랍니다. 
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="panel" id="panel4">
+                                <dl>
+                                    <dt>A/S기간은 어떻게 되나요? </dt>
+                                    <dd>
+                                        전 제품 자체결함시 1년간 전 상품에 대해 보증수리를 해 드리고 있습니다.
+                                        부품이 들어갈 경우 자재 비용만 받고, 무상 A/S기간이더라도 고객님의 부주의로 인한 파손은 유상 A/S로 처리됩니다.
+
+                                        <span>※ 정품이 아니거나, 본 사이트와 본 회사가 유통한 채널에서 구매한 제품이 아닌 타 업체, 개인 직거래를 통해 수선한 경우 수선을 거부할 권리를 가지고 제품에 대한 책임을 지지 않습니다.</span>
+
+                                    </dd>
+
+                                    <dt>A/S비용은 얼마나 드나요?</dt>
+                                    <dd>
+                                        AS비용에 관련된 자세한 안내는 고객번호(1599-8246)으로 문의 바랍니다. 
+                                    </dd>
+
+                                    <dt>A/S가 가능한 경우는?</dt>
+                                    <dd>
+                                        홈페이지에서 구매 이력이 확인될 시, A/S 원하시는 부분 간단한 메모와 함께 (06107) 서울특별시 강남구 논현로 626 엠빌딩 7층으로  보내주시면 A/S진행을 도와드립니다. 
+                                    </dd>
+
+                                    <dt>A/S가 불가능한 경우는?</dt>
+                                    <dd>
+                                        홈페이지에서 구매 이력이 확인되지 않을 시, 구매일시/구매자명/구매 사이트 확인을 부탁드립니다.<br> A/S는 자사 홈페이지에서 구매하신 건에 한하여 도움드릴 수 있는 부분입니다. A/S의 경우 구매처에 문의를 하시면 A/S진행을 도와드립니다.
+                                    </dd>
+
+                                    <dt>제품 변색의 경우</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>1. 메탈제품의 변색 -  메탈 밴드의 경우 먼지와 땀의 축척은 피부를 자극시키며 스테인리스 스틸의 산화를 진행 시키므로, 
+                                                주기적으로 칫솔과 액체비누, 물티슈 등을 이용해 세척후 마른 헝겊으로 잘 닦아주는 관리가 필요합니다.</li>
+                                            <li>2. 주얼리 변색 - 쥬얼리 제품 중 실버 소재로 된 제품은 사용기간과 관련 없이 사용자의 따라 변색 기간이 다릅니다. 실버 특성상 제품 변색은 자연스러운 현상이며 도금 및 폴리싱 과정을 통해 유상 수리 가능합니다.</li>
+
+                                        </ul>
+                                    </dd>
+                                </dl> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- // contentswrap -->
+            <footer>
+                    <div class="footer-inner">
+                        <ul class="information information_b">
+                            <li><a href="about.html">회사소개</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a>
+                            </li>
+                            <li>법인명 : (주)트랜드메카</li>
+                            <li>대표자 : 서대규 </li>
+                            <li>통신판매업 신고 : 2016-서울강남02846호</li>
+                            <li>(06107) 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층</li>
+                            <li>사업자 등록번호 안내 : 113-86-48435 <a href="#none" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=113-86-48435', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a></li>
+                        </ul>
+                        <ul class="copyright copyright_b">
+                            <li> 2018 trendmecca</li>
+                        </ul>
+                    </div>
+            </footer><!-- // footer -->
+            
+    
+</body>
+
+<script>
+    $(document).ready(function(){
+            $('.visual-text-right li a').on('mouseover focusin', function() {
+            	if ( !$(this).hasClass('active') ) {
+	            	var $this = $(this);
+		            $('.visual-text-right li a').removeClass('active');
+	            	$(this).addClass('active');
+	            	var nav = $(this).data('child');
+	            	$('.visual-cont li').stop().fadeOut();            	
+	            	$('.visual-cont li.' + nav).stop().fadeIn();
+            	}
+            })
+        
+            $('.panel:not(:first)').hide()
+            $('.tab li a:first').addClass('on')
+            $('.tab li a').click(function() {
+                var link = $(this).attr('href')
+                $('.panel').hide()
+                $(link).show()
+
+                $('.tab li a').removeClass('on')
+                $(this).addClass('on')
+
+                return false;
+            });
+
+            $('.panel dd').hide()
+            $('.panel dt').click(function(){
+                $('+dd',this).slideToggle('fast')
+            });
+        });		
+</script>
+</html>
